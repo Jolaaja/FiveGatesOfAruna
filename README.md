@@ -1,35 +1,39 @@
-# FiveGatesOfAruna
+# Five Gates of Aruna
 
-Unity 2D action-platformer prototype for Bagian B. The prototype demonstrates reusable enemy prefabs configured with `EnemyStats` ScriptableObject assets and a singleton `CoinManager` connected to the HUD.
+Prototipe game platformer aksi 2D yang dibuat dengan Unity. Proyek ini mencakup kontrol karakter, pertarungan sederhana, tiga jenis musuh, serta sistem koin dan upgrade damage.
 
-## Open the project
+## Menjalankan proyek
 
-1. Add this repository folder in Unity Hub.
-2. Open `Assets/Scenes/Prototype.unity`.
-3. Use a Unity 2023.1 editor and press **Play**.
+1. Tambahkan folder repository ini melalui Unity Hub.
+2. Buka scene `Assets/Scenes/Prototype.unity`.
+3. Gunakan Unity **2023.1.22f1**, lalu tekan **Play**.
 
-## Gameplay controls
+## Kontrol
 
-| Input | Action |
+| Tombol | Fungsi |
 | --- | --- |
-| A/D or Left/Right Arrow | Move |
-| Left Shift | Sprint |
-| Space | Jump |
-| J or Left Mouse Button | Attack |
-| U | Buy a damage upgrade when enough coins are available |
+| `A` / `D` atau panah kiri / kanan | Bergerak |
+| `Left Shift` | Berlari |
+| `Space` | Melompat |
+| `J` atau klik kiri | Menyerang |
+| `U` | Membeli upgrade damage jika koin mencukupi |
 
-## Enemy data
+## Data musuh
 
-The three prefabs in `Assets/Prefabs` each reference an `EnemyStats` asset in `Assets/Data`:
+Prefab musuh berada di `Assets/Prefabs`, sedangkan konfigurasi statistiknya menggunakan aset `EnemyStats` di `Assets/Data`.
 
-| Enemy | Health | Damage | Move speed | Attack cooldown | Armor | Coin reward |
+| Musuh | Health | Damage | Kecepatan | Cooldown serangan | Armor | Hadiah koin |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Grunt | 50 | 10 | 2.0 | 1.5 s | 20% | 5 |
-| Brute | 100 | 20 | 1.5 | 1.3 s | 30% | 10 |
-| Stalker | 180 | 35 | 1.0 | 1.0 s | 40% | 20 |
+| Grunt | 50 | 10 | 2.0 | 1.5 detik | 20% | 5 |
+| Brute | 100 | 20 | 1.5 | 1.3 detik | 30% | 10 |
+| Stalker | 180 | 35 | 1.0 | 1.0 detik | 40% | 20 |
 
-`CoinManager` grants the configured coin reward when an enemy is defeated and updates the HUD. The `cost` field is stored in enemy data but enemy purchasing is not implemented in this prototype.
+Musuh memberikan koin saat dikalahkan. Koin dapat digunakan untuk meningkatkan damage pemain. Nilai `cost` pada data musuh belum digunakan untuk sistem pembelian.
 
-## Deliverables
+## Isi repository
 
-See `Deliverables` for the Unity package, report, live-sheet workbook, and Unity Editor screenshots. The optional WebGL/Windows build is not included.
+- `Assets/` — scene, script, prefab, data, dan aset visual.
+- `Packages/` dan `ProjectSettings/` — konfigurasi proyek Unity.
+- `Deliverables/` — Unity package, laporan, workbook, dan screenshot dari Unity Editor.
+
+Build WebGL maupun Windows tidak disertakan.
