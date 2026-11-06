@@ -1,0 +1,6 @@
+Level,EnemyHPMultiplier,GruntHP,BruteHP,StalkerHP,SpawnRatePerMinute,DifficultyIndex,PlayerPowerTarget,PowerGapPercent,Notes
+1,1.00,50,100,180,2,100,106,6.00,Onboarding
+2,1.20,60,120,216,3,118,125,5.93,Pressure rises
+3,1.45,72.5,145,261,4,142,150,5.63,Mid-run challenge
+4,1.75,87.5,175,315,3,158,168,6.33,Breathing space after spike
+5,2.10,105,210,378,5,190,201,5.79,Final challenge
